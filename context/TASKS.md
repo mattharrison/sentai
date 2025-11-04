@@ -15,12 +15,12 @@ This checklist outlines the steps required to build the SentAI project, focusing
 
 ## Phase 2: Core Classification Logic
 
-3.  [ ] **Implement Classification Function (`src/sentai/classifier.py`)**
-    1.  [ ] Implement `classify_text(text: str)` function.
-    2.  [ ] Add logic to check for `OPENAI_API_KEY` environment variable.
-    3.  [ ] Implement `get_classification_prompt` to generate the system message, including the Pydantic schema.
-    4.  [ ] Implement the OpenAI API call using `client.chat.completions.create` with `response_model=ClassificationResult` and `model="gpt-4o-mini"`.
-    5.  [ ] Handle potential API exceptions (e.g., rate limits, invalid key).
+3.  [x] **Implement Classification Function (`src/sentai/classifier.py`)**
+    1.  [x] Implement `classify_text(text: str)` function.
+    2.  [x] Add logic to check for `OPENAI_API_KEY` environment variable.
+    3.  [x] Implement `get_classification_prompt` to generate the system message, including the Pydantic schema.
+    4.  [x] Implement the OpenAI API call using `client.chat.completions.create` with `response_model=ClassificationResult` and `model="gpt-4o-mini"`.
+    5.  [x] Handle potential API exceptions (e.g., rate limits, invalid key).
 
 ## Phase 3: Command Line Interface (CLI)
 
