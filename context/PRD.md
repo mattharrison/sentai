@@ -1,5 +1,9 @@
 # Product Requirements Document: SentAI Text Classifier
 
+## Prime Directive
+
+DO NOT WRITE ANY CODE if you have questions about the requirements. Instead, ASK QUESTIONS until you fully understand the requirements. Only write code when you are certain about what needs to be built.
+
 ## 1. Introduction
 
 This document outlines the requirements for **SentAI**, a Python library and command-line tool designed for advanced text classification using the OpenAI API. The tool will classify input text across three dimensions: polarity, emotion, and subjectivity, returning structured data for easy integration and analysis.

@@ -54,15 +54,15 @@ def classify_text(text: str) -> ClassificationResult:
 
     try:
         # Use the Responses API for structured output
-        response = client.beta.responses.create(
+        response = client.responses.parse(
             model="gpt-4o-mini",
             input=text,
             instructions=instructions,
-            response_model=ClassificationResult,
+            text_format=ClassificationResult,
         )
         
         # The response is already validated and converted to ClassificationResult
-        return response
+        return response.output_parsed
         
     except APIError as e:
         print(f"An API error occurred: {e}", file=os.sys.stderr)
