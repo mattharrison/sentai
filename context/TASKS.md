@@ -24,13 +24,13 @@ This checklist outlines the steps required to build the SentAI project, focusing
 
 ## Phase 3: Command Line Interface (CLI)
 
-4.  [ ] **Develop CLI Tool (`src/sentai/cli.py`)**
-    1.  [ ] Implement `main()` function using `argparse`.
-    2.  [ ] Define the required positional argument for the input `text`.
-    3.  [ ] Call `classify_text` with the input text.
-    4.  [ ] Output the resulting `ClassificationResult` as formatted JSON using `model_dump_json(indent=4)`.
-    5.  [ ] Handle and report errors (e.g., missing API key, classification failure) gracefully to `stderr`.
-    6.  [ ] Verify the `pyproject.toml` entry point (`sentai = "sentai.cli:main"`) is correct.
+4.  [x] **Develop CLI Tool (`src/sentai/cli.py`)**
+    1.  [x] Implement `main()` function using `argparse`.
+    2.  [x] Define the required positional argument for the input `text`.
+    3.  [x] Call `classify_text` with the input text.
+    4.  [x] Output the resulting `ClassificationResult` as formatted JSON using `model_dump_json(indent=4)`.
+    5.  [x] Handle and report errors (e.g., missing API key, classification failure) gracefully to `stderr`.
+    6.  [x] Verify the `pyproject.toml` entry point (`sentai = "sentai.cli:main"`) is correct.
 
 ## Phase 4: Testing
 
