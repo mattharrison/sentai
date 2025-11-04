@@ -1,5 +1,12 @@
 import argparse
 import sys
+from dotenv import load_dotenv
+
+# Load environment variables from a .env file, if it exists.
+# This should be called before importing other modules that rely on
+# environment variables at import time (like classifier.py).
+load_dotenv()
+
 from sentai.classifier import classify_text
 
 def main():
