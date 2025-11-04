@@ -4,9 +4,9 @@ This checklist outlines the steps required to build the SentAI project, focusing
 
 ## Phase 1: Setup and Core Models (MVP Foundation)
 
-1.  [ ] **Project Setup & Dependencies**
-    1.  [ ] Ensure `pyproject.toml` is correctly configured with dependencies (`openai`, `pydantic`) and project structure (`src/sentai`). (Completed in initial setup)
-    2.  [ ] Verify `uv` environment setup (local environment creation).
+1.  [x] **Project Setup & Dependencies**
+    1.  [x] Ensure `pyproject.toml` is correctly configured with dependencies (`openai`, `pydantic`) and project structure (`src/sentai`). (Completed in initial setup)
+    2.  [x] Verify `uv` environment setup (local environment creation).
 2.  [ ] **Define Pydantic Models (`src/sentai/models.py`)**
     1.  [ ] Define `Polarity` Enum (Positive, Negative, Neutral).
     2.  [ ] Define `Emotion` Enum (Happy, Sad, Angry, etc.).
